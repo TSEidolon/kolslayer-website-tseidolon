@@ -14,16 +14,20 @@ import { FaYoutube } from "react-icons/fa";
 export function NavBarTest() {
   return (
     <div>
-      <section className="flex justify-around align items-center gap-10 bg-blue-700 py-5">
+      <section className="flex justify-evenly align items-center gap-10 bg-blue-700 py-5">
         <div> 
-          <p className='text-3xl text-white'> Game Name </p>
-          {/* Put Logo Here  */}
+  
+
+        <button class="btn group flex items-center bg-transparent p-2 px-6 text-3xl font-thin tracking-widest text-white">
+        <span class="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">Game Name</span>
+
+  </button>
         </div>
         <div>
           <ul className="flex justify-center items-center gap-10 text-white">
             <li className=''> 
               <a href="null">
-                <p className='text-lg '>
+                <p className='text-lg'>
                   Home
                 </p>
               </a>
