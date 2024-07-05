@@ -11,7 +11,7 @@ library.add(faTwitter, faFacebook, faPinterest, faGithub, faWhatsapp, faInstagra
 
 
 
-export default function Navbar({ fixed }) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
