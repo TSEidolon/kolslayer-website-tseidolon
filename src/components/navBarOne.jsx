@@ -16,8 +16,10 @@ export function NavBarTest() {
   const [navbarOpen, setNavbarOpen] =React.useState(false)
   return (
     <div>
-      <section className="flex justify-center items-center gap-10 bg-blue-700 py-3 lg:flex-row flex-col w-full ">
-        <div className="flex justify-between "> 
+      <section className="flex justify-evenly items-center gap-10 bg-blue-700 py-3 lg:flex-row flex-col w-full ">
+          {/* !!!!!!!!!! */}
+        <div className="flex justify-between w-full"> 
+          {/* !!!!!!!!!  */}
         <button className="btn group flex items-center bg-transparent p-2 px-6 text-3xl font-thin tracking-widest text-white">
         <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">Game Name</span>
 
@@ -26,7 +28,7 @@ export function NavBarTest() {
         <FaBarsStaggered className="text-xl relative"/>
         </button>
         </div>
-        <div className={"lg:flex  items-center h-full gap-10 lg:flex-row flex-col " + (navbarOpen ? " flex" : " hidden")}>
+        <div className={"lg:flex  items-center h-full gap-10 lg:flex-row flex-col pr-10" + (navbarOpen ? " flex" : " hidden")}>
 
           <div>
           <ul className="flex justify-center items-center gap-10 text-white h-full lg:flex-row flex-col">
@@ -87,6 +89,7 @@ export function NavBarTest() {
           after:h-px 
           after:top-[-54%]
           lg:flex-row
+          
         ">
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block 
           after:content-['\_\_\_'] 
