@@ -16,8 +16,8 @@ export function NavBarTest() {
   const [navbarOpen, setNavbarOpen] =React.useState(false)
   return (
     <div>
-      <section className="flex justify-evenly align items-center gap-10 bg-blue-700 pb-2 h-24">
-        <div> 
+      <section className="flex justify-center items-center gap-10 bg-blue-700 py-3 lg:flex-row flex-col w-full ">
+        <div className="flex justify-between "> 
         <button className="btn group flex items-center bg-transparent p-2 px-6 text-3xl font-thin tracking-widest text-white">
         <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">Game Name</span>
 
@@ -26,10 +26,10 @@ export function NavBarTest() {
         <FaBarsStaggered className="text-xl relative"/>
         </button>
         </div>
-        <div className={"lg:flex flex-grow items-center h-full gap-10" + (navbarOpen ? " flex" : " hidden")}>
+        <div className={"lg:flex  items-center h-full gap-10 lg:flex-row flex-col " + (navbarOpen ? " flex" : " hidden")}>
 
           <div>
-          <ul className="flex justify-center items-center gap-10 text-white h-full">
+          <ul className="flex justify-center items-center gap-10 text-white h-full lg:flex-row flex-col">
             <li className=' h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
             '> 
@@ -86,7 +86,7 @@ export function NavBarTest() {
           after:w-3 
           after:h-px 
           after:top-[-54%]
-          
+          lg:flex-row
         ">
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block 
           after:content-['\_\_\_'] 
