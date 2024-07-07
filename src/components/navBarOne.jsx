@@ -15,8 +15,8 @@ import { FaBarsStaggered } from "react-icons/fa6";
 export function NavBarTest() {
   const [navbarOpen, setNavbarOpen] =React.useState(false)
   return (
-    <div>
-      <section className="flex justify-evenly items-center gap-10 bg-blue-700 py-3 lg:flex-row flex-col w-full ">
+    <div className="h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden">
+      <section className="flex justify-evenly items-center gap-10  py-3 lg:flex-row flex-col w-full ">
           {/* !!!!!!!!!! */}
         <div className="flex justify-between w-full"> 
           {/* !!!!!!!!!  */}
@@ -32,8 +32,8 @@ export function NavBarTest() {
 
           <div>
           <ul className="flex justify-center items-center gap-10 text-white h-full lg:flex-row flex-col">
-            <li className=' h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
-            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
+            <li className=' h-full flex justify-center items-center px-2  
+            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
             '> 
               <a href="null">
                 <p className='text-lg  '>
@@ -41,32 +41,32 @@ export function NavBarTest() {
                 </p>
               </a>
             </li>
-            <li className='h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
-            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
+            <li className='h-full flex justify-center items-center px-2  
+            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
               <a href="null">
                 <p className='text-lg'>
                   Game
                 </p>
               </a>
             </li>
-            <li className='h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
-            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
+            <li className='h-full flex justify-center items-center px-2  
+            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
               <a href="null">
                 <p className='text-lg'>
                   Weapons
                 </p>
               </a>
             </li>
-            <li className='h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
-            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
+            <li className='h-full flex justify-center items-center px-2  
+            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
               <a href="null">
                 <p className='text-lg'>
                   Media
                 </p>
               </a>
             </li>
-            <li className='h-full flex justify-center items-center px-2 hover:bg-white hover:text-blue-500
-            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-blue-600 before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-blue-600 after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
+            <li className='h-full flex justify-center items-center px-2  
+            relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
               <a href="null">
                 <p className='text-lg '>
                   SignUp
@@ -142,6 +142,24 @@ export function NavBarTest() {
         </div>
 
 
+      </section>
+      <section className="text-white">
+        <div>
+          <h1> Game Name</h1>
+          <p> Catchprase Words Here</p>
+        </div>
+        <div>
+          <button>
+            <p>
+              Buy Now!
+            </p>
+          </button>
+          <button>
+            <p>
+              Watch The Trailer
+            </p>
+          </button>
+        </div>
       </section>
     </div>
   )
