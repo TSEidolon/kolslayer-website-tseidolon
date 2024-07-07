@@ -143,12 +143,12 @@ export function NavBarTest() {
 
 
       </section>
-      <section className="text-white">
-        <div>
-          <h1> Game Name</h1>
-          <p> Catchprase Words Here</p>
+      <section className="text-white ">
+        <div className="flex flex-col justify-center items-center py-20">
+          <h1 className="text-[120px]"> Game Name</h1>
+          <p className="text-4xl"> Catchprase Words Here</p>
         </div>
-        <div>
+        <div className="flex flex-col">
           <button>
             <p>
               Buy Now!
