@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/src/assets/background.jpg')",
+        'game-pattern-one': "url('/src/assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg')",
       }
     },
   },
