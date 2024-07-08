@@ -150,8 +150,8 @@ export function NavBarTest() {
       </section>
       <section className="text-white h-[60vh] flex justify-center items-center flex-col gap-20">
         <div className="flex flex-col justify-center items-center ">
-          <h1 className="text-[120px]"> Game Name</h1>
-          <p className="text-4xl"> Catchprase Words Here</p>
+          <h1 className="text-[120px] select-none"> Game Name</h1>
+          <p className="text-4xl select-none"> Catchprase Words Here</p>
         </div>
         <div className="flex flex-col gap-5">
           <button>
