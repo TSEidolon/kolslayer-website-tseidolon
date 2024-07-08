@@ -92,6 +92,7 @@ export function NavBarTest() {
           
         ">
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block 
+          hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
           after:translate-y-2/4 
@@ -104,6 +105,7 @@ export function NavBarTest() {
             <FaInstagram className="text-xl relative"/>
           </span>
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
           after:translate-y-2/4 
@@ -114,6 +116,7 @@ export function NavBarTest() {
             <FaFacebook className="text-xl relative"/>
           </span>
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
           after:translate-y-2/4 
@@ -124,6 +127,7 @@ export function NavBarTest() {
             <FaXTwitter className="text-xl relative"/>
           </span>
           <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
           after:translate-y-2/4 
@@ -133,7 +137,8 @@ export function NavBarTest() {
           after:top-[-54%]">
             <FaDiscord className="text-xl relative"/>
           </span>
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block">
+          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          hover:before:border-2">
             <FaYoutube className="text-xl relative"/>
           </span>
  
@@ -143,19 +148,19 @@ export function NavBarTest() {
 
 
       </section>
-      <section className="text-white ">
-        <div className="flex flex-col justify-center items-center py-20">
+      <section className="text-white h-[60vh] flex justify-center items-center flex-col gap-20">
+        <div className="flex flex-col justify-center items-center ">
           <h1 className="text-[120px]"> Game Name</h1>
           <p className="text-4xl"> Catchprase Words Here</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-5">
           <button>
-            <p>
-              Buy Now!
+            <p className="hero-button hero-button-one ">
+              Buy Now
             </p>
           </button>
           <button>
-            <p>
+            <p className="hero-button hero-button-two ">
               Watch The Trailer
             </p>
           </button>

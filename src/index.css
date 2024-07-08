@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-size: 24px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,5 +20,78 @@ code {
     monospace;
 }
 
+.hero-button {
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.hero-button-one {
+  font-size: var(--font-size);
+}
+
+.hero-button-two {
+  font-size:var(--font-size);
+}
+
+.hero-button::before {
+  margin-left: auto;
+}
+
+.hero-button-one::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: calc(var(--font-size) + 80%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to right, white, transparent);
+  display: block;
+  transition: 0.5s;
+}
+
+.hero-button-one::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  right: calc(var(--font-size) + 80%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to left, white, transparent);
+  display: block;
+  transition: 0.5s;
+}
 
 
+
+.hero-button-two::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: calc(var(--font-size) + 100%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to right, white, transparent);
+  display: block;
+  transition: 0.5s;
+}
+
+.hero-button-two::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  right: calc(var(--font-size) + 100%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to left, white, transparent);
+  display: block;
+  transition: 0.5s;
+}
+
+.hero-button:hover::after, .hero-button:hover::before {
+  width: 50px;
+}
