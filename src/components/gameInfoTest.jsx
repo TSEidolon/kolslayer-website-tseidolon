@@ -1,7 +1,7 @@
 import React from 'react'
 import pineTree from '../assets/pine-tree.png'
 
-export function GameInfo () {
+export function GameInfoTest () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
   const handeTitle = (e) => {
     setgameInfoOpen(e)
