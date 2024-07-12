@@ -4,6 +4,9 @@
 
 :root {
   --font-size: 24px;
+  --primary: #3183C5;
+  --secondary: #315A83;
+  --tertiary: white;
 }
 
 body {
