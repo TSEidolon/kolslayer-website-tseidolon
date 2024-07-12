@@ -3,7 +3,7 @@ import pineTree from '../assets/pine-tree.png'
 
 export function GameInfo () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
-  const handeTitle = (e) => {
+  const handleTitle = (e) => {
     setgameInfoOpen(e)
   }
   function checkClick() {
@@ -17,14 +17,30 @@ export function GameInfo () {
         <section className="flex justify-center items-center gap-10 border-2 w-[60%] pl-10 h-[90%]">
           <div className="border-2  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
             <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(1); checkClick(); }}> Title 1 </button>
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===1 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 1 
+            </p>
+            </button>
             <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(2); checkClick(); }}> Title 2 </button>
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(2); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===2 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 2 
+            </p>
+            </button>
             <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(3); checkClick(); }}> Title 3 </button>
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(3); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===3 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 3 
+            </p>
+            </button>
             <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(4); checkClick(); }}> Title 4 </button>
- 
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(4); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===4 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 4 
+            </p>
+            </button>
+
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===1 ? " flex": " hidden")}>
             <h2 className="text-2xl"> Title of Paragraph1 </h2>
