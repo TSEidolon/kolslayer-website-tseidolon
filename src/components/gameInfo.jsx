@@ -11,7 +11,7 @@ export function GameInfo () {
   }
 
   return(
-    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-white bg-[#3183C5] bg-game-info-background bg-cover bg-no-repeat">
+    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-white bg-[#3183C5] bg-game-info-background bg-left bg-no-repeat bg-[length:75%]">
       <h1 className="border-2 py-5 px-[100px] text-2xl"> Game Info </h1>
       <div className="h-full flex w-full">
         <section className="flex justify-center items-center gap-10 border-2 w-[60%] pl-10 h-[90%]">
