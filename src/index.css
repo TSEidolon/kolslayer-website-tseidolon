@@ -98,3 +98,28 @@ code {
 .hero-button:hover::after, .hero-button:hover::before {
   width: 50px;
 }
+
+.game-info-top:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  left: calc(5px + 70%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to right, white, transparent);
+  display: block;
+  
+}
+.game-info-top:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  right: calc(5px + 70%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to left, white, transparent);
+  display: block;
+  
+}
