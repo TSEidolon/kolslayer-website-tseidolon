@@ -1,10 +1,10 @@
 import React from 'react'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import pineTree from '../assets/pine-tree.png'
 
 
 export function GameInfoTest () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
-  const handeTitle = (e) => {
+  const handleTitle = (e) => {
     setgameInfoOpen(e)
   }
   function checkClick() {
@@ -12,59 +12,68 @@ export function GameInfoTest () {
   }
 
   return(
-    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-blue-700 ">
-      <Parallax pages={1} style={{overflow: "hidden" }} className=''>
-
-
-      <h1 className="border-2 py-5 px-[100px] text-2xl"> Game Info </h1>
+    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-white bg-[#3183C5] bg-game-info-background bg-left bg-no-repeat bg-[length:75%]">
+      <div className='relative'>
+        <h1 className=" py-5 px-[100px] text-2xl game-info-top"> Game Info </h1>
+      </div>
+      
       <div className="h-full flex w-full">
-        <section className="flex justify-center items-center gap-10 border-2 w-[60%] pl-10 h-[90%]">
-          <div className="border-2  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
-            <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(1); checkClick(); }}> Title 1 </button>
-            <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(2); checkClick(); }}> Title 2 </button>
-            <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(3); checkClick(); }}> Title 3 </button>
-            <button className=" px-2 border-2 border-black w-full text-center
-            relative  transition-all ease-in-out  after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-black after:origin-center after:h-full after:w-0 hover:after:w-[12%] after:right-[0%]" type="button" onClick={() => {handeTitle(4); checkClick(); }}> Title 4 </button>
- 
+        <section className="flex justify-center items-center gap-10  w-[60%] pl-10 h-[90%] ">
+          <div className="  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
+            <button className=" px-2 border-2 border-white w-full text-center
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===1 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 1 
+            </p>
+            </button>
+            <button className=" px-2 border-2 border-white w-full text-center
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(2); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===2 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 2 
+            </p>
+            </button>
+            <button className=" px-2 border-2 border-white w-full text-center
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(3); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===3 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 3 
+            </p>
+            </button>
+            <button className=" px-2 border-2 border-white w-full text-center
+            relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(4); checkClick(); }}> 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===4 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Title 4 
+            </p>
+            </button>
+
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===1 ? " flex": " hidden")}>
-            <h2 className="text-2xl"> Title of Paragraph1 </h2>
+            <h2 className="text-4xl "> Title of Paragraph1 </h2>
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===2 ? " flex": " hidden")}>
-            <h2 className="text-2xl"> Title of Paragraph2 </h2>
+            <h2 className="text-4xl"> Title of Paragraph2 </h2>
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===3 ? " flex": " hidden")}>
-            <h2 className="text-2xl"> Title of Paragraph3 </h2>
+            <h2 className="text-4xl"> Title of Paragraph3 </h2>
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===4 ? " flex": " hidden")}>
-            <h2 className="text-2xl"> Title of Paragraph4 </h2>
+            <h2 className="text-4xl"> Title of Paragraph4 </h2>
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
         </section>
-        
-
-        
-        <section className="pl-10  pb-[100px] flex justify-center items-center w-[40%] select-none">
-
-          <ParallaxLayer offset={0} speed={2.5} className='testing'>
-            <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45"></div>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={2.5} className='testing' >
-            <div className='bg-game-info-foreground h-[400px] w-[400px]  bg-cover bg-no-repeat'> </div>
-          </ParallaxLayer>
-
+        <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
+          <div className=" bg-game-info-background2 bg-no-repeat">
+            <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
+              <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg]' />
             
- 
+            </div>
+          </div>
+
         </section>
-      
       </div>
-      </Parallax>
+    
     </div>
     
   )

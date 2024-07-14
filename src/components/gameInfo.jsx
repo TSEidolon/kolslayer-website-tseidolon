@@ -1,6 +1,6 @@
 import React from 'react'
 import pineTree from '../assets/pine-tree.png'
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 
 export function GameInfo () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
