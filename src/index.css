@@ -123,3 +123,15 @@ code {
   display: block;
   
 }
+
+.testing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-remove-scrollbar {
+	-webkit-scrollbar-display: none !important;
+	scrollbar-width: 0 !important;
+	overflow: hidden !important;
+}

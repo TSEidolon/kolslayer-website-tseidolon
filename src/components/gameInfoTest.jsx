@@ -1,5 +1,6 @@
 import React from 'react'
-import pineTree from '../assets/pine-tree.png'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 
 export function GameInfoTest () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
@@ -11,7 +12,10 @@ export function GameInfoTest () {
   }
 
   return(
-    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-blue-700">
+    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-blue-700 ">
+      <Parallax pages={1} style={{overflow: "hidden" }} className=''>
+
+
       <h1 className="border-2 py-5 px-[100px] text-2xl"> Game Info </h1>
       <div className="h-full flex w-full">
         <section className="flex justify-center items-center gap-10 border-2 w-[60%] pl-10 h-[90%]">
@@ -43,14 +47,24 @@ export function GameInfoTest () {
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
         </section>
+        
+
+        
         <section className="pl-10  pb-[100px] flex justify-center items-center w-[40%] select-none">
-          <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45">
-            <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg]' />
+
+          <ParallaxLayer offset={0} speed={2.5} className='testing'>
+            <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45"></div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={2.5} className='testing' >
+            <div className='bg-game-info-foreground h-[400px] w-[400px]  bg-cover bg-no-repeat'> </div>
+          </ParallaxLayer>
+
             
-          </div>
+ 
         </section>
+      
       </div>
-    
+      </Parallax>
     </div>
     
   )

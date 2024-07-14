@@ -1,7 +1,7 @@
 
 import { NavBarTest } from "./components/navBarOne.jsx";
 import { GameInfo } from "./components/gameInfo.jsx";
-
+import { GameInfoTest } from "./components/gameInfoTest.jsx";
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div>
       <NavBarTest />
       <GameInfo />
+      <GameInfoTest />
     </div>
 
   );

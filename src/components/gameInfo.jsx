@@ -1,5 +1,6 @@
 import React from 'react'
 import pineTree from '../assets/pine-tree.png'
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 export function GameInfo () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
@@ -62,11 +63,14 @@ export function GameInfo () {
             <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
           </div>
         </section>
-        <section className="pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none bg-game-info-background2 bg-no-repeat">
-          <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45">
-            <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg]' />
+        <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
+          <div className=" bg-game-info-background2 bg-no-repeat">
+            <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
+              <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg]' />
             
+            </div>
           </div>
+
         </section>
       </div>
     
