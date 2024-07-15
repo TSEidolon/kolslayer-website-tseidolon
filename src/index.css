@@ -124,14 +124,41 @@ code {
   
 }
 
+
+/* Test CSS Area */
 .testing {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parallax-remove-scrollbar {
-	-webkit-scrollbar-display: none !important;
-	scrollbar-width: 0 !important;
-	overflow: hidden !important;
+.parallax-remove-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.animation, .animation_layer {
+	height: 1000px;
+}
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer .parallax {
+	position: fixed;
+}
+
+#background {
+  background-image: url(assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg);
+}
+
+#foreground {
+  background-image: url(assets/pine-tree.png);
 }

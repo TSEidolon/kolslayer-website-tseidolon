@@ -11,6 +11,7 @@ function App() {
       <NavBarTest />
       <GameInfo />
       <TestComponent />
+
     </div>
 
   );
