@@ -12,7 +12,7 @@ export function GameInfo () {
   }
 
   return(
-    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden text-white bg-[#3183C5] bg-game-info-background bg-left bg-no-repeat bg-[length:75%]">
+    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden overflow-y-hidden text-white bg-[#3183C5] bg-game-info-background bg-left bg-no-repeat bg-[length:75%]">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl game-info-top"> Game Info </h1>
       </div>
@@ -64,13 +64,20 @@ export function GameInfo () {
           </div>
         </section>
         <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
-        <Parallax speed={10}>
-          <div className=" bg-game-info-background2 bg-no-repeat">
-            <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
-            <Parallax speed={10}>
+        <Parallax speed={10} >
+          <div className="  ">
+            <div className=" z-20 relative bg-game-pattern-one h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
+            <Parallax speed={10} >
             <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] h-[400px] w-[400px]' />
             </Parallax>
             </div>
+            <svg width="500" height="500" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg" className='z-10 absolute top-[20%] right-[-50px] '>
+<rect x="154.221" y="0.707107" width="217.102" height="217.102" transform="rotate(45 154.221 0.707107)" stroke="white"/>
+<rect x="154.946" y="21.7556" width="186.938" height="186.938" transform="rotate(45 154.946 21.7556)" stroke="white"/>
+<rect x="154.946" y="93.8991" width="135.925" height="135.925" transform="rotate(45 154.946 93.8991)" stroke="white"/>
+<rect x="155.357" y="130.362" width="118.604" height="118.604" transform="rotate(45 155.357 130.362)" stroke="white"/>
+</svg>
+
           </div>
         </Parallax>
 

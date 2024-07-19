@@ -9,8 +9,9 @@ import { ParallaxProvider } from "react-scroll-parallax";
 function App() {
   return (
     <div>
-      <NavBarTest />
-      <ParallaxProvider>
+      
+      <ParallaxProvider >
+        <NavBarTest />
         <GameInfo />
       </ParallaxProvider> 
       
