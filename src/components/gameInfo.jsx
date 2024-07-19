@@ -1,6 +1,6 @@
 import React from 'react'
 import pineTree from '../assets/pine-tree.png'
-
+import { Parallax } from 'react-scroll-parallax';
 
 export function GameInfo () {
   const [gameInfoOpen, setgameInfoOpen] = React.useState(1);
@@ -64,12 +64,16 @@ export function GameInfo () {
           </div>
         </section>
         <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
+        <Parallax speed={10}>
           <div className=" bg-game-info-background2 bg-no-repeat">
             <div className="bg-game-pattern-one relative h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
-              <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg]' />
-            
+            <Parallax speed={10}>
+            <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] h-[400px] w-[400px]' />
+            </Parallax>
             </div>
           </div>
+        </Parallax>
+
 
         </section>
       </div>
