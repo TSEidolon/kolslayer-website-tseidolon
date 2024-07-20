@@ -99,6 +99,8 @@ code {
   width: 50px;
 }
 
+/* Game Info Section */
+
 .game-info-top:after {
   content: '';
   position: absolute;
@@ -124,6 +126,31 @@ code {
   
 }
 
+/* Weapons Info Section */
+.weapons-info-top:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  left: calc(15px + 70%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to right, white, transparent);
+  display: block;
+  
+}
+.weapons-info-top:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  right: calc(15px + 70%);
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(to left, white, transparent);
+  display: block;
+  
+}
 
 /* Test CSS Area */
 .testing {
