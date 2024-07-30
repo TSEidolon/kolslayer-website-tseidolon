@@ -13,20 +13,37 @@ export function WeaponsInfo () {
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl weapons-info-top"> Weapons Info </h1>
       </div>
-      <section>
-        <div className="h-[100%] flex justify-center items-center gap-[20px] ">
-          <div className=" h-[450px] w-[325px] border-black border-2 flex justify-center items-center flex-col">
+      <section className="w-full">
+        <div className="h-[100%] w-full flex justify-center items-stretch gap-[10rem] ">
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-20 pt-2">
             <div className="">
-              <h2 className="text-3xl"> Sword </h2>
+              <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
-            <div className="flex justify-center items-center">
-              <img src={sword} alt="sword-image" className="w-[50%] h-[225px]" />
-              <p className="pr-[5px]"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro molestiae fuga veniam harum velit odio neque quasi cum illum voluptates? Lorem ipsum dolor sit amet.</p>
+            <div className="flex justify-stretch items-center  h-[70%] ">
+              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
+            </div>
+          </div>
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-20 pt-2">
+            <div className="">
+              <h2 className="text-3xl pb-2"> Sword </h2>
+            </div>
+            <div className="flex justify-stretch items-center  h-[70%] ">
+              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
+            </div>
+          </div>
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-20 pt-2">
+            <div className="">
+              <h2 className="text-3xl pb-2"> Sword </h2>
+            </div>
+            <div className="flex justify-stretch items-center  h-[70%] ">
+              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
 
-          <p>card 2</p>
-          <p>card 3</p>
+
         </div>
 
       </section>
