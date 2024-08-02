@@ -152,6 +152,14 @@ code {
   
 }
 
+.weapons-wheel {
+  animation:spin 200s linear infinite;
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
 /* Test CSS Area */
 .testing {
   display: flex;
@@ -189,3 +197,5 @@ display: none;
 #foreground {
   background-image: url(assets/pine-tree.png);
 }
+
+
