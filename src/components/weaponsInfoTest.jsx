@@ -6,12 +6,23 @@ import { Parallax } from "react-scroll-parallax"
 
 
 // const todo = {["background"],["fix useState for cards"]}
-export function WeaponsInfo () {
-  // const [weaponsInfoOpen, setweaponsInfoOpen] = React.useState(1);
-  // const handleTitle = (e) => {
-  //   setweaponsInfoOpen(e)
+export function WeaponsInfoTest () {
+  const [weaponsInfoOpen, setweaponsInfoOpen] = React.useState(1);
+  const handleCards = (e) => {
+    setweaponsInfoOpen(e)
+  }
+  function checkClick() {
+    console.log (weaponsInfoOpen)
+  }
+  // function weaponBackgroundCards() {
+  //   if (weaponsInfoOpen===1){
+  //      " bg-sword-background bg-left"
+  //   } else if (weaponsInfoOpen===2) {
+  //      " bg-sword-background bg-center"
+  //   } else {
+  //     " bg-sword-background bg-right"
+  //   }
   // }
-  
 
  
   return (
@@ -22,9 +33,13 @@ export function WeaponsInfo () {
         
       </div>
       <Parallax speed={10}  className="w-full h-full">
-      <section className="w-full h-full bg-sword-background bg-contain bg-center  bg-no-repeat ">
+      <section className={"w-full h-full  bg-contain   bg-no-repeat bg-sword-background bg-center " + (
+        weaponsInfoOpen===1 ? "bg-sword-background bg-left": 
+        weaponsInfoOpen===2 ? "bg-sword-background bg-center" :  
+        "bg-sword-background bg-right"
+      )}>
         <div className=" w-full h-full flex justify-center items-center gap-[10rem] z-20 relative">
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2">
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2" onClick={() => {handleCards(1);checkClick()}}>
             <div className="">
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
@@ -33,7 +48,7 @@ export function WeaponsInfo () {
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2">
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2" onClick={() => {handleCards(2);checkClick()}}>
             <div className="">
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
@@ -42,7 +57,7 @@ export function WeaponsInfo () {
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2">
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2" onClick={() => {handleCards(3);checkClick()}}>
             <div className="">
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
