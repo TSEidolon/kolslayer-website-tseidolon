@@ -1,5 +1,7 @@
 import React from "react"
 import sword from "../assets/sword-id-6331871.png"
+import axe from "../assets/axe.png"
+import mace from "../assets/mace.png"
 
 import { Parallax } from "react-scroll-parallax"
 
@@ -14,15 +16,7 @@ export function WeaponsInfoTest () {
   function checkClick() {
     console.log (weaponsInfoOpen)
   }
-  // function weaponBackgroundCards() {
-  //   if (weaponsInfoOpen===1){
-  //      " bg-sword-background bg-left"
-  //   } else if (weaponsInfoOpen===2) {
-  //      " bg-sword-background bg-center"
-  //   } else {
-  //     " bg-sword-background bg-right"
-  //   }
-  // }
+
 
  
   return (
@@ -44,7 +38,7 @@ export function WeaponsInfoTest () {
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
             <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <img src={sword} alt="sword-image" className="w-[40%] h-[225px] object-contain" />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
@@ -53,7 +47,7 @@ export function WeaponsInfoTest () {
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
             <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <img src={axe} alt="axe-image" className="w-[40%] h-[300px] object-contain rotate-90" />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
@@ -62,7 +56,7 @@ export function WeaponsInfoTest () {
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
             <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={sword} alt="sword-image" className="w-[40%] h-[225px]" />
+              <img src={mace} alt="sword-image" className="w-[40%] h-[225px] object-contain" />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
