@@ -11,7 +11,9 @@ module.exports = {
         'game-info-background': "url('/src/assets/Rectangle19.svg')", 
         'game-info-background2': "url('/src/assets/WeirdShape.svg')",
         'game-info-foreground': "url('/src/assets/pine-tree.png')",
-        'sword-background': "url('/src/assets/sword-id-6331871.png')"
+        'sword-background': "url('/src/assets/sword-id-6331871.png')",
+        'axe-background': "url('/src/assets/axe.png')",
+        'mace-background': "url('/src/assets/mace.png')",
       }
     },
   },

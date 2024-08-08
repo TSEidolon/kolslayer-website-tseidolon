@@ -27,10 +27,10 @@ export function WeaponsInfoTest () {
         
       </div>
       <Parallax speed={10}  className="w-full h-full">
-      <section className={"w-full h-full  bg-contain   bg-no-repeat bg-sword-background bg-center " + (
+      <section className={"w-full h-full  bg-contain bg-no-repeat  " + (
         weaponsInfoOpen===1 ? "bg-sword-background bg-left": 
-        weaponsInfoOpen===2 ? "bg-sword-background bg-center" :  
-        "bg-sword-background bg-right"
+        weaponsInfoOpen===2 ? "bg-axe-background bg-center " :  
+        "bg-mace-background bg-right"
       )}>
         <div className=" w-full h-full flex justify-center items-center gap-[10rem] z-20 relative">
           <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-30 pt-2" onClick={() => {handleCards(1);checkClick()}}>
@@ -38,7 +38,7 @@ export function WeaponsInfoTest () {
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
             <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={sword} alt="sword-image" className="w-[40%] h-[225px] object-contain" />
+              <img src={sword} alt="sword-image" className="w-[35%] h-[225px] object-contain" />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
@@ -46,8 +46,8 @@ export function WeaponsInfoTest () {
             <div className="">
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
-            <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={axe} alt="axe-image" className="w-[40%] h-[300px] object-contain rotate-90" />
+            <div className="flex justify-stretch items-center pl-[10px] h-[70%] ">
+              <img src={axe} alt="axe-image" className="w-[40%] h-[300px] object-contain " />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
@@ -56,7 +56,7 @@ export function WeaponsInfoTest () {
               <h2 className="text-3xl pb-2"> Sword </h2>
             </div>
             <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={mace} alt="sword-image" className="w-[40%] h-[225px] object-contain" />
+              <img src={mace} alt="sword-image" className="w-[35%] h-[225px] object-contain" />
               <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
             </div>
           </div>
