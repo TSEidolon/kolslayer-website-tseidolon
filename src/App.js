@@ -7,6 +7,12 @@ import { GameInfo } from "./components/gameInfo.jsx";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { WeaponsInfo } from "./components/weaponsInfo.jsx";
 import {MediaInfo} from "./components/mediaInfo.jsx"
+import { SignUp } from "./components/signUpInfo.jsx";
+
+
+// 
+// !! Check if adjusting scroll speed is a thing !!
+// 
 
 function App() {
   return (
@@ -17,6 +23,7 @@ function App() {
         <GameInfo />
         <WeaponsInfo />
         <MediaInfo />
+        <SignUp />
       </ParallaxProvider> 
       
     </div>
