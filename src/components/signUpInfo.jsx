@@ -12,7 +12,7 @@ export function SignUp () {
       <section className="z-20 flex justify-center items-center flex-col gap-4">
         <h1 className="text-4xl"> Learn More </h1>
           <form className="w-[400px] mx-auto">
-            <div className="relative">
+            <div className="relative flex flex-col justify-center items-center gap-2">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none h-[50px]">
                 <svg className="w-4 h-4 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                   <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
@@ -21,9 +21,9 @@ export function SignUp () {
               </div>
               <input type="text" className="bg-[#315A83] border border-[#315A83]  text-lg rounded-md focus:outline-none focus:border-white focus:ring-sky-500 block w-full  ps-10 p-2.5 " placeholder="Enter Your Email"/>
 
-              <button type="submit" className="text-xl  p-[10px] w-full relative 
+              <button type="submit" className="text-xl  p-[10px] w-[50%] relative border-x-2 rounded-md bg-[#315A83]
 
-              transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[21%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[21%] after:bottom-0 after:right-[50%]
+              transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-gradient-to-r  before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-gradient-to-l from-white to-transparent after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
               "> Newsletter Sign Up </button>
             </div>
           </form>
@@ -99,7 +99,7 @@ export function SignUp () {
         </div>
         <div className="relative">
           <button className="text-3xl p-2 relative
-          transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[42%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[42%] after:bottom-0 after:right-[50%]
+          transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-gradient-to-r  before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-gradient-to-l from-white to-transparent after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
           ">Buy Now</button>
         </div>
       </section>
