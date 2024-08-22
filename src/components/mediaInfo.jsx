@@ -28,7 +28,7 @@ export function MediaInfo (){
       </section>
       {/* <img src={backgroundImage1} alt="" className="absolute -z-10 " /> */}
     <Parallax  speed={15} className="-z-10  absolute max-w-6xl">
-      <img src={backgroundImage1} alt="" className="  top-[-10%] right-[50%] h-[800px]" />
+      <img src={backgroundImage1} alt="" className="  top-[-10%] right-[50%] h-[850px]" />
     </Parallax>
     </div>
     </div>
