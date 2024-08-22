@@ -15,7 +15,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 export function NavBarTest() {
   const [navbarOpen, setNavbarOpen] =React.useState(false)
   return (
-    <div className="h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden">
+    <div className="min-h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden">
       <section className="flex justify-evenly items-center gap-10  py-3 lg:flex-row flex-col w-full ">
           {/* !!!!!!!!!! */}
         <div className="flex justify-between w-full"> 

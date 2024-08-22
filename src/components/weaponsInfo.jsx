@@ -26,7 +26,7 @@ export function WeaponsInfo () {
         <h1 className=" py-5 px-[100px] text-2xl weapons-info-top"> Weapons Info </h1>
         
       </div>
-      <Parallax speed={15}  className="w-full h-full">
+      <Parallax speed={-2}  className="w-full h-full">
       <section className={"w-full h-full  bg-contain bg-no-repeat  " + (
         weaponsInfoOpen===1 ? "bg-sword-background bg-left": 
         weaponsInfoOpen===2 ? "bg-axe-background bg-left " :  

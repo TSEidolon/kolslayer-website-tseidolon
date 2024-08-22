@@ -64,10 +64,10 @@ export function GameInfo () {
           </div>
         </section>
         <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
-        <Parallax speed={10} >
+        <Parallax speed={-10} >
           <div className="  ">
             <div className=" z-20 relative bg-game-pattern-one h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
-            <Parallax speed={10} >
+            <Parallax speed={-10} >
             <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] h-[400px] w-[400px]' />
             </Parallax>
             </div>
