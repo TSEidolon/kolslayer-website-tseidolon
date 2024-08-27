@@ -9,9 +9,7 @@ import { FaSteam } from "react-icons/fa";
 import { FaPlaystation } from "react-icons/fa";
 import { FaXbox } from "react-icons/fa";
 import { BsNintendoSwitch } from "react-icons/bs";
-
-
-
+import chameleon from "../assets/chameleon.png"
 
 // import { Parallax } from "react-scroll-parallax"
 
@@ -132,7 +130,7 @@ export function SignUp () {
         </svg>
 
       </div>
-      <div className="h-[25vh] bg-[#315A83] flex items-center flex-col text-white p-5">
+      <div className="h-[25vh] bg-[#315A83] flex items-center flex-col text-white p-5 relative">
         <div className="flex justify-between items-center p-5 w-[40%]">
           <SiEpicgames className="text-[50px] "/>
           <FaSteam className="text-[50px]" />
@@ -142,6 +140,8 @@ export function SignUp () {
 
         </div>
         <p className="pt-10 text-xs" >This game and its related content are works of fiction. Any resemblance to actual names, characters, businesses, places, events, or locales is purely coincidental.</p>
+        <p className="pt-10 text-xs"> Made by: TSEidolon </p>
+        <img src={chameleon} alt="chameleon" className="absolute right-[10%] top-[-17%]" />
       </div>
     </div>
   )

@@ -10,6 +10,8 @@ import { FaBarsStaggered } from "react-icons/fa6";
 
 // Scroll to Section Watch this 
 // https://www.youtube.com/watch?v=oszUqCqTGHo
+// or How to Scroll to an Element in React
+// https://spacejelly.dev/posts/how-to-scroll-to-an-element-in-react
 
 
 export function NavBarTest() {
