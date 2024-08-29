@@ -12,13 +12,13 @@ export function GameInfo () {
   }
 
   return(
-    <div className="h-screen flex justify-center items-start flex-col overflow-x-hidden overflow-y-hidden text-white bg-[#3183C5] bg-game-info-background bg-left bg-no-repeat bg-[length:75%]">
+    <div className="min-h-screen flex  gap-[50px] items-start flex-col overflow-x-hidden overflow-y-hidden text-white bg-[#3183C5] lg:bg-game-info-background bg-left bg-no-repeat  bg-[length:85%] lg:pb-0 pb-10">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl game-info-top"> Game Info </h1>
       </div>
       
-      <div className="h-full flex w-full">
-        <section className="flex justify-center items-center gap-10  w-[60%] pl-10 h-[90%] ">
+      <div className="h-full flex w-full flex-col lg:flex-row justify-center items-center pb-10 px-5 pt-[4rem]">
+        <section className="flex justify-center items-center gap-10  lg:w-[60%] w-full p-10 h-[90%] lg:border-none border-2 rounded-md">
           <div className="  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
@@ -71,7 +71,7 @@ export function GameInfo () {
             <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] h-[400px] w-[400px]' />
             </Parallax>
             </div>
-            <svg width="500" height="500" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg" className='z-10 absolute top-[20%] right-[-50px] '>
+            <svg width="500" height="500" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg" className='z-10 absolute lg:top-[20%] top-[-50px] lg:right-[-50px] right-[-150px]'>
 <rect x="154.221" y="0.707107" width="217.102" height="217.102" transform="rotate(45 154.221 0.707107)" stroke="white"/>
 <rect x="154.946" y="21.7556" width="186.938" height="186.938" transform="rotate(45 154.946 21.7556)" stroke="white"/>
 <rect x="154.946" y="93.8991" width="135.925" height="135.925" transform="rotate(45 154.946 93.8991)" stroke="white"/>
