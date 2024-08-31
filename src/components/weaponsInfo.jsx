@@ -28,7 +28,7 @@ export function WeaponsInfo () {
       </div>
       <Parallax speed={-2}  className="w-full h-full flex justify-center items-center">
       <section className={"w-full h-full  bg-contain bg-no-repeat  " + (
-        weaponsInfoOpen===1 ? "bg-sword-background bg-left bg-[length:300px_360px] max-lg:bg-none ": 
+        weaponsInfoOpen===1 ? "bg-sword-background bg-left bg-[length:300px_400px] max-lg:bg-none ": 
         weaponsInfoOpen===2 ? "bg-axe-background bg-left max-lg:bg-none bg-[length:300px_340px] " :  
         "bg-mace-background bg-left max-lg:bg-none bg-[length:300px_340px] "
       )}>

@@ -17,8 +17,8 @@ export function GameInfo () {
         <h1 className=" py-5 px-[100px] text-2xl game-info-top"> Game Info </h1>
       </div>
       
-      <div className="h-full flex w-full flex-col lg:flex-row justify-center items-center pb-10 px-5 pt-[4rem]">
-        <section className="flex justify-center items-center gap-10  lg:w-[60%] w-full p-10 h-[90%] lg:border-none border-2 rounded-md">
+      <div className="h-full flex w-full flex-col lg:flex-row justify-center items-center pb-10 px-5 pt-[4rem] gap-36 lg:gap-0">
+        <section className="flex justify-center items-center gap-10  lg:w-[60%] w-full p-10 h-[90%] lg:border-none border-2 rounded-md lg:bg-none bg-[#315A83]">
           <div className="  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
@@ -64,14 +64,14 @@ export function GameInfo () {
           </div>
         </section>
         <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>
-        <Parallax speed={-10} >
+        <Parallax speed={-5} >
           <div className="  ">
-            <div className=" z-20 relative bg-game-pattern-one h-[400px] w-[400px]  bg-cover bg-no-repeat border-2 rotate-45 ">
+            <div className=" z-20 relative bg-game-pattern-one lg:h-[400px] lg:w-[400px] h-[300px] w-[300px] bg-cover bg-no-repeat border-2 rotate-45 ">
             <Parallax speed={-10} >
-            <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] h-[400px] w-[400px]' />
+            <img src={pineTree} alt="Pine Tree" className='rotate-[-45deg] lg:h-[400px] lg:w-[400px] h-[300px] w-[300px]' />
             </Parallax>
             </div>
-            <svg width="500" height="500" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg" className='z-10 absolute lg:top-[20%] top-[-50px] lg:right-[-50px] right-[-150px]'>
+            <svg width="400" height="400" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg" className='z-10 absolute lg:top-[20%] top-[-50px] lg:right-[-50px] right-[-150px] lg:h-[500px] lg:w-[500px] '>
 <rect x="154.221" y="0.707107" width="217.102" height="217.102" transform="rotate(45 154.221 0.707107)" stroke="white"/>
 <rect x="154.946" y="21.7556" width="186.938" height="186.938" transform="rotate(45 154.946 21.7556)" stroke="white"/>
 <rect x="154.946" y="93.8991" width="135.925" height="135.925" transform="rotate(45 154.946 93.8991)" stroke="white"/>
