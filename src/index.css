@@ -27,6 +27,10 @@ code {
     monospace;
 }
 
+.text-readability {
+  text-shadow: black 0px 0px 10px;
+}
+
 .hero-button {
   border: none;
   background: none;
