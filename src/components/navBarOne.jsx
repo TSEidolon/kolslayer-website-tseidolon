@@ -17,13 +17,13 @@ import { FaBarsStaggered } from "react-icons/fa6";
 export function NavBarTest() {
   const [navbarOpen, setNavbarOpen] =React.useState(false)
   return (
-    <div className="min-h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden pb-5 text-readability">
+    <div className="min-h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden pb-5 lg:text-readability">
       <section className="flex justify-evenly items-center gap-10  py-3 lg:flex-row flex-col w-full ">
           {/* !!!!!!!!!! */}
         <div className="flex justify-between w-full"> 
           {/* !!!!!!!!!  */}
         <button className="btn group flex items-center bg-transparent p-2 px-6 text-3xl font-thin tracking-widest text-white">
-        <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 text-readability ">Game Name</span>
+        <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 lg:text-readability ">Game Name</span>
 
         </button>
         <button className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onClick={()=> setNavbarOpen(!navbarOpen)}>
