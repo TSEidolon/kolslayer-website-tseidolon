@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -15,8 +16,9 @@ import { FaBarsStaggered } from "react-icons/fa6";
 // https://www.youtube.com/watch?v=oszUqCqTGHo
 
 
-export function NavBarOneTest() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false)
+export function NavBarOneTest({navScroll}) {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  
   return (
     <div className="  min-h-screen bg-hero-pattern bg-no-repeat bg-center overflow-x-hidden overflow-y-hidden">
       <section className="flex justify-evenly items-center gap-10  py-3 lg:flex-row flex-col w-full ">
@@ -46,11 +48,11 @@ export function NavBarOneTest() {
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
-              <a href="null">
+              <button onClick={() => navScroll.current.scrollIntoView({behavior: "smooth"})}>
                 <p className='text-lg'>
                   Game
                 </p>
-              </a>
+              </button>
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
