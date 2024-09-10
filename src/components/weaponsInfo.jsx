@@ -1,4 +1,5 @@
 import React from "react"
+import { forwardRef } from "react"
 import sword from "../assets/sword-id-6331871.png"
 import axe from "../assets/axe.png"
 import mace from "../assets/mace.png"
@@ -7,8 +8,7 @@ import { Parallax } from "react-scroll-parallax"
 
 
 
-// const todo = {["background"],["fix useState for cards"]}
-export function WeaponsInfo () {
+export default forwardRef (function WeaponsInfo(props,ref) {
   const [weaponsInfoOpen, setweaponsInfoOpen] = React.useState(1);
   const handleCards = (e) => {
     setweaponsInfoOpen(e)
@@ -21,7 +21,7 @@ export function WeaponsInfo () {
  
   return (
 
-    <div className="min-h-screen flex items-start flex-col gap-[100px] overflow-x-hidden overflow-y-hidden  text-white bg-[#3183C5]">
+    <div ref={ref} className="min-h-screen flex items-start flex-col gap-[100px] overflow-x-hidden overflow-y-hidden  text-white bg-[#3183C5]">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl weapons-info-top"> Weapons Info </h1>
         
@@ -93,4 +93,4 @@ export function WeaponsInfo () {
 
 
   )
-}
+})
