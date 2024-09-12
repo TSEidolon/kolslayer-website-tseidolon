@@ -21,7 +21,7 @@ export default forwardRef (function WeaponsInfo(props,ref) {
  
   return (
 
-    <div ref={ref} className="min-h-screen flex items-start flex-col gap-[100px] overflow-x-hidden overflow-y-hidden  text-white bg-[#3183C5]">
+    <div {...props} ref={ref} className="min-h-screen flex items-start flex-col gap-[100px] overflow-x-hidden overflow-y-hidden  text-white bg-[#3183C5]">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl weapons-info-top"> Weapons Info </h1>
         

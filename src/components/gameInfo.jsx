@@ -13,7 +13,7 @@ export default forwardRef (function GameInfo(props,ref) {
   }
 
   return(
-    <div ref={ref} className="min-h-screen flex  gap-[50px] items-start flex-col overflow-x-hidden overflow-y-hidden text-white bg-[#3183C5] lg:bg-game-info-background bg-left bg-no-repeat  bg-[length:85%] lg:pb-0 pb-10">
+    <div {...props} ref={ref} className="min-h-screen flex  gap-[50px] items-start flex-col overflow-x-hidden overflow-y-hidden text-white bg-[#3183C5] lg:bg-game-info-background bg-left bg-no-repeat  bg-[length:85%] lg:pb-0 pb-10">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl game-info-top"> Game Info </h1>
       </div>

@@ -16,7 +16,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 // https://www.youtube.com/watch?v=oszUqCqTGHo
 
 
-export function NavBarOneTest({navScrollOne},{navScrollTwo}) {
+export function NavBarOneTest({navScrollOne,navScrollTwo}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   
   return (

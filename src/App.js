@@ -16,20 +16,24 @@ import { SignUp } from "./components/signUpInfo.jsx";
 // 
 
 function App() {
-  const gameRef = useRef (0);
-  const weaponsRef = useRef (1);
-  const mediaRef = useRef (2);
+  // const gameRef = useRef(0);
+  // const weaponsRef = useRef(1);
 
 
+  const gameRef = useRef(null);
+  const weaponsRef = useRef(null);
+ 
+
+ 
   return (
     <div>
       
       <ParallaxProvider >
-        <NavBarOneTest navScrollOne={weaponsRef} navScrollTwo={gameRef}  />
+        <NavBarOneTest navScrollOne={gameRef} navScrollTwo={weaponsRef}  />
         <NavBarTest />
         <GameInfo ref={gameRef} />
         <WeaponsInfo  ref={weaponsRef}/>
-        <MediaInfo ref={mediaRef}/>
+        <MediaInfo />
         <SignUp />
       </ParallaxProvider> 
       
