@@ -19,7 +19,7 @@ export default forwardRef (function GameInfo(props,ref) {
       </div>
       
       <div className="h-full flex w-full flex-col lg:flex-row justify-center items-center pb-10 px-5 pt-[4rem] gap-36 lg:gap-0">
-        <section className="flex justify-center items-center gap-10  lg:w-[60%] w-full p-10 h-[90%] lg:border-none border-2 rounded-md lg:bg-none bg-[#315A83]">
+        <section className="flex justify-center items-center gap-10  lg:w-[60%] w-full p-10 h-[90%] lg:border-none border-2 rounded-md lg:bg-transparent bg-[#315A83]">
           <div className="  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
