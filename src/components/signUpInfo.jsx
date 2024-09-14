@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import React from "react"
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -13,9 +14,9 @@ import chameleon from "../assets/chameleon.png"
 
 // import { Parallax } from "react-scroll-parallax"
 
-export function SignUp () {
+export default forwardRef(function SignUp(props,ref)  {
   return (
-    <div>
+    <div {...props} ref={ref}>
       <div className="h-[70vh] flex flex-col items-center justify-center  text-white bg-[#3183C5] gap-6 relative ">
         <section className="z-20 flex justify-center items-center flex-col gap-4">
           <h1 className="text-4xl"> Learn More </h1>
@@ -147,4 +148,4 @@ export function SignUp () {
       </div>
     </div>
   )
-}
+})

@@ -13,7 +13,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 // https://www.youtube.com/watch?v=-Xjwe4IwTMM
 
 
-export function NavBarTest() {
+export function NavBarTest({navScrollOne,navScrollTwo,navScrollThree,navScrollFour}) {
   const [navbarOpen, setNavbarOpen] =React.useState(false);
 
   return (
@@ -46,35 +46,35 @@ export function NavBarTest() {
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
-              <a href="null">
+              <button onClick={() => navScrollOne.current.scrollIntoView({behavior: "smooth"})}>
                 <p className='text-lg'>
                   Game
                 </p>
-              </a>
+              </button>
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
-              <a href="null">
+              <button onClick={() => navScrollTwo.current.scrollIntoView({behavior: "smooth"})}>
                 <p className='text-lg'>
                   Weapons
                 </p>
-              </a>
+              </button>
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
-              <a href="null">
+              <button onClick={() => navScrollThree.current.scrollIntoView({behavior: "smooth"})}>
                 <p className='text-lg'>
                   Media
                 </p>
-              </a>
+              </button>
             </li>
             <li className='h-full flex justify-center items-center px-2  
             relative cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-500 before:absolute before:bg-white before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-500 after:absolute after:bg-white after:origin-center after:h-[2px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'> 
-              <a href="null">
-                <p className='text-lg '>
+              <button onClick={() => navScrollFour.current.scrollIntoView({behavior: "smooth"})}>
+                <p className='text-lg'>
                   SignUp
                 </p>
-              </a>
+              </button>
             </li>
 
 

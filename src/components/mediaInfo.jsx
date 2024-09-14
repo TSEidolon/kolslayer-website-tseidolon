@@ -1,18 +1,17 @@
+import { forwardRef } from "react"
+
 import image1 from "../assets/background.jpg"
 import image2 from "../assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg"
 import image3 from "../assets/greg-rosenke-kr67X9ralR0-unsplash.jpg"
 import image4 from "../assets/heather-shevlin-3B_NrzTjajc-unsplash.jpg"
-// import image2 from "../assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg"
-// import image2 from "../assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg"
-// import image2 from "../assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg"
-// import image2 from "../assets/giorgio-trovato-n4cjanwvGdg-unsplash.jpg"
+
 import backgroundImage1 from "../assets/WeirdShapeAbbomination.png"
 
 import { Parallax } from "react-scroll-parallax"
 
-export function MediaInfo (){
+export default forwardRef(function MediaInfo(props,ref) {
   return (
-    <div className="min-h-screen flex items-start flex-col overflow-x-hidden overflow-y-hidden   text-white bg-[#3183C5]">
+    <div {...props} ref={ref} className="min-h-screen flex items-start flex-col overflow-x-hidden overflow-y-hidden   text-white bg-[#3183C5]">
       <div className='relative'>
         <h1 className=" py-5 px-[100px] text-2xl weapons-info-top"> Media Info </h1>
       </div>
@@ -33,4 +32,4 @@ export function MediaInfo (){
     </div>
     </div>
   )
-}
+})
