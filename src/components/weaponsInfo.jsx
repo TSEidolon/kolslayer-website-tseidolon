@@ -33,32 +33,26 @@ export default forwardRef (function WeaponsInfo(props,ref) {
         "bg-mace-background bg-left max-lg:bg-none bg-[length:300px_340px] "
       )}>
         <div className=" w-full h-full flex flex-wrap flex-col lg:flex-row justify-center items-center gap-[5rem] z-20 relative py-10 px-20">
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-40 pt-2" onClick={() => {handleCards(1);checkClick()}}>
-            <div className="">
-              <h2 className="text-3xl pb-2"> Sword </h2>
-            </div>
-            <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={sword} alt="sword-image" className="w-[35%] h-[225px] object-contain" />
-              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
-            </div>
+          <div className=" h-[440px] w-[290px] border-white border-2  rounded-xl bg-[#315A83]  pt-2" onClick={() => {handleCards(1);checkClick()}}>
+              <div className="flex justify-around items-center flex-col h-full py-4">
+              <h2 className="text-2xl "> BBSword </h2>
+              <img src={sword} alt="sword-image" className="w-full h-[300px] object-contain" />
+              <p className=" text-md text-center flex items-center px-4"> Lorem, ipsum dolor sit amet consectetur </p>
+              </div>
           </div>
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-40 pt-2" onClick={() => {handleCards(2);checkClick()}}>
-            <div className="">
-              <h2 className="text-3xl pb-2"> Sword </h2>
-            </div>
-            <div className="flex justify-stretch items-center pl-[10px] h-[70%] ">
-              <img src={axe} alt="axe-image" className="w-[40%] h-[300px] object-contain " />
-              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
-            </div>
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl  bg-[#315A83] pt-2" onClick={() => {handleCards(2);checkClick()}}>
+              <div className="flex justify-around items-center flex-col h-full py-4">
+                <h2 className="text-2xl "> Axe </h2>
+                <img src={axe} alt="sword-image" className="w-full h-[280px] object-contain" />
+                <p className=" text-md text-center flex items-center px-4"> Lorem, ipsum dolor sit amet consectetur </p>
+              </div>
           </div>
-          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl bg-black bg-opacity-40 pt-2" onClick={() => {handleCards(3);checkClick()}}>
-            <div className="">
-              <h2 className="text-3xl pb-2"> Sword </h2>
-            </div>
-            <div className="flex justify-stretch items-center  h-[70%] ">
-              <img src={mace} alt="sword-image" className="w-[35%] h-[225px] object-contain" />
-              <p className=" text-lg 2 text-center h-full flex items-center pr-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..</p>
-            </div>
+          <div className=" h-[440px] w-[290px] border-white border-2 flex justify-center items-center flex-col rounded-xl  bg-[#315A83] pt-2" onClick={() => {handleCards(3);checkClick()}}>
+          <div className="flex justify-around items-center flex-col h-full py-4">
+                <h2 className="text-2xl "> Mace </h2>
+                <img src={mace} alt="sword-image" className="w-full h-[300px] object-contain" />
+                <p className=" text-md text-center flex items-center px-4"> Lorem, ipsum dolor sit amet consectetur </p>
+              </div>
           </div>
         </div>
 
