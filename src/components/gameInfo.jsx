@@ -23,45 +23,45 @@ export default forwardRef (function GameInfo(props,ref) {
           <div className="  text-xl flex justify-center items-center flex-col min-w-[20%] h-full gap-10">
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(1); checkClick(); }}> 
-            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===1 ? " after:w-[12%]": " hover:after:w-[12%]")}>
-              Title 1 
+            <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white  after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===1 ? " after:w-[12%]": " hover:after:w-[12%]")}>
+              Adapt
             </p>
             </button>
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(2); checkClick(); }}> 
             <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===2 ? " after:w-[12%]": " hover:after:w-[12%]")}>
-              Title 2 
+              Slay Aliens 
             </p>
             </button>
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(3); checkClick(); }}> 
             <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===3 ? " after:w-[12%]": " hover:after:w-[12%]")}>
-              Title 3 
+              Explore  
             </p>
             </button>
             <button className=" px-2 border-2 border-white w-full text-center
             relative  transition-all ease-in-out  " type="button" onClick={() => {handleTitle(4); checkClick(); }}> 
             <p className={'after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-full after:w-0 after:right-[0%]' + (gameInfoOpen===4 ? " after:w-[12%]": " hover:after:w-[12%]")}>
-              Title 4 
+              Conquest
             </p>
             </button>
 
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===1 ? " flex": " hidden")}>
-            <h2 className="text-4xl "> Title of Paragraph1 </h2>
-            <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
+            <h2 className="text-4xl "> Adapt To Survive </h2>
+            <p className="text-lg"> In Kol Slayer, explore a hostile alien planet where danger lurks at every turn. Master the art of quick weapon-switching as you face relentless enemies, shifting terrains, and dynamic environments. Choose the right gear, adapt to new challenges, and survive in a world where only the adaptable thrive.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===2 ? " flex": " hidden")}>
-            <h2 className="text-4xl"> Title of Paragraph2 </h2>
-            <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
+            <h2 className="text-4xl"> Slay Hordes of Aliens </h2>
+            <p className="text-lg"> Waves of relentless extraterrestrial enemies never cease. Armed with powerful weapons and explosive abilities, you must fight for survival against endless hordes. Adapt your strategy, upgrade your arsenal, and see how long you can last in this high-octane battle for survival.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===3 ? " flex": " hidden")}>
-            <h2 className="text-4xl"> Title of Paragraph3 </h2>
-            <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
+            <h2 className="text-4xl"> Explore and Uncover Secrets </h2>
+            <p className="text-lg"> In Kol Slayer, journey across a vast alien planet, teeming with hidden secrets and untapped resources. As a lone explorer, gather rare materials to craft powerful gear, uncover ancient mysteries, and face fierce alien beasts. Explore uncharted territories, unlock the planet’s secrets, and become the ultimate Kol Slayer.</p>
           </div>
           <div className={" h-full flex-col justify-center items-center gap-10" + (gameInfoOpen===4 ? " flex": " hidden")}>
-            <h2 className="text-4xl"> Title of Paragraph4 </h2>
-            <p className="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora repellat odit possimus fugit modi doloremque, facere commodi illo quod quia quibusdam quos dolore sit qui animi suscipit impedit quis rem. Dolor deserunt velit similique aliquid. Vero a nobis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
+            <h2 className="text-4xl"> Conquest Is Your Goal </h2>
+            <p className="text-lg"> As you land on a mysterious alien planet teeming with powerful adversaries and unknown dangers. To grow stronger, you must claim and conquer hostile territories, harness their resources, and unlock new abilities. Every victory brings power, but the planet fights back—only the strongest will dominate and survive.</p>
           </div>
         </section>
         <section className='pl-10  pb-[110px] flex justify-center items-center w-[40%] select-none'>

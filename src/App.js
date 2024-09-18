@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { NavBarTest } from "./components/navBarOne.jsx";
+import { NavBarMain } from "./components/navBarOne.jsx";
 import  GameInfo  from "./components/gameInfo.jsx";
 // import { GameInfoTest } from "./components/gameInfoTest.jsx";
 // import { TestComponent } from "./components/parallaxTest.jsx";
@@ -31,7 +31,7 @@ function App() {
     <div>
       
       <ParallaxProvider >
-        <NavBarTest navScrollOne={gameRef} navScrollTwo={weaponsRef} navScrollThree={mediaRef} navScrollFour={signUpRef}/>
+        <NavBarMain navScrollOne={gameRef} navScrollTwo={weaponsRef} navScrollThree={mediaRef} navScrollFour={signUpRef}/>
         <GameInfo ref={gameRef} />
         <WeaponsInfo  ref={weaponsRef}/>
         <MediaInfo ref={mediaRef}/>

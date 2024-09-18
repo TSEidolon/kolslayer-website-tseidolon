@@ -13,7 +13,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 // https://www.youtube.com/watch?v=-Xjwe4IwTMM
 
 
-export function NavBarTest({navScrollOne,navScrollTwo,navScrollThree,navScrollFour}) {
+export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFour}) {
   const [navbarOpen, setNavbarOpen] =React.useState(false);
 
   return (
@@ -23,7 +23,7 @@ export function NavBarTest({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
         <div className="flex justify-between w-full"> 
           {/* !!!!!!!!!  */}
         <button className="btn group flex items-center bg-transparent p-2 px-6 text-3xl font-thin tracking-widest text-white">
-        <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 lg:text-readability ">Game Name</span>
+        <span className="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-11/12 after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 lg:text-readability ">Kol Slayer</span>
 
         </button>
         <button className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onClick={()=> setNavbarOpen(!navbarOpen)}>
@@ -155,8 +155,8 @@ export function NavBarTest({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
       </section>
       <section className="text-white h-[60vh] flex justify-start lg:justify-center items-center flex-col gap-20">
         <div className="flex flex-col justify-center items-center ">
-          <h1 className="text-[120px] select-none "> Game Name</h1>
-          <p className="text-4xl select-none "> Catchprase Words Here</p>
+          <h1 className="text-[120px] select-none pt-7"> Kol Slayer </h1>
+          <p className="text-4xl select-none "> Adapt, Survive, and Conquer the Unknown! </p>
         </div>
         <div className="flex flex-col gap-5 ">
           <button>
