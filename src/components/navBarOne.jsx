@@ -96,7 +96,7 @@ export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
           lg:pb-0
           
         ">
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block 
+          <button className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block 
           hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
@@ -108,8 +108,8 @@ export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
            ">
 
             <FaInstagram className="text-xl relative"/>
-          </span>
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          </button>
+          <button className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
           hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
@@ -119,8 +119,8 @@ export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
           after:h-px 
           after:top-[-54%]">
             <FaFacebook className="text-xl relative"/>
-          </span>
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          </button>
+          <button className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
           hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
@@ -130,8 +130,8 @@ export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
           after:h-px 
           after:top-[-54%]">
             <FaXTwitter className="text-xl relative"/>
-          </span>
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          </button>
+          <button className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
           hover:before:border-2
           after:content-['\_\_\_'] 
           after:absolute 
@@ -141,11 +141,11 @@ export function NavBarMain({navScrollOne,navScrollTwo,navScrollThree,navScrollFo
           after:h-px 
           after:top-[-54%]">
             <FaDiscord className="text-xl relative"/>
-          </span>
-          <span className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
+          </button>
+          <button className="before:block before:absolute before:-inset-1 before:-rotate-45 before:border before:border-white relative inline-block
           hover:before:border-2">
             <FaYoutube className="text-xl relative"/>
-          </span>
+          </button>
  
 
         </div>
