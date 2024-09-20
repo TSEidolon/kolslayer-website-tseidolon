@@ -1,10 +1,6 @@
 import { useRef } from "react";
 import { NavBarMain } from "./components/navBarOne.jsx";
 import  GameInfo  from "./components/gameInfo.jsx";
-// import { GameInfoTest } from "./components/gameInfoTest.jsx";
-// import { TestComponent } from "./components/parallaxTest.jsx";
-// import { WeaponsInfoTest } from "./components/weaponsInfoTest.jsx";
-// import { NavBarOneTest } from "./components/navBarOneTest.jsx";
 import { ParallaxProvider } from "react-scroll-parallax";
 import  WeaponsInfo  from "./components/weaponsInfo.jsx";
 import MediaInfo from "./components/mediaInfo.jsx"
@@ -31,7 +27,12 @@ function App() {
     <div>
       
       <ParallaxProvider >
-        <NavBarMain navScrollOne={gameRef} navScrollTwo={weaponsRef} navScrollThree={mediaRef} navScrollFour={signUpRef}/>
+        <NavBarMain 
+          navScrollOne={gameRef} 
+          navScrollTwo={weaponsRef} 
+          navScrollThree={mediaRef} 
+          navScrollFour={signUpRef}
+        />
         <GameInfo ref={gameRef} />
         <WeaponsInfo  ref={weaponsRef}/>
         <MediaInfo ref={mediaRef}/>
