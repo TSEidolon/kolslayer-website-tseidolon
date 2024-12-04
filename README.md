@@ -1,3 +1,10 @@
+A Fictional responsive game website used to practice the basics of React JS by utilizing hooks such as useRef and useState
+
+ - JavaScript Library: React JS.
+ - CSS framework: Tailwind CSS
+
+Mockuip website made in Figma: [Figma Mockup]()
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
