@@ -1,9 +1,10 @@
 A Fictional responsive game website used to practice the basics of React JS by utilizing hooks such as useRef and useState
 
+[Live Website Hosted on Netlify](https://kolslayer-tseidolon.netlify.app/)
  - JavaScript Library: React JS.
  - CSS framework: Tailwind CSS
 
-Mockuip website made in Figma: [Figma Mockup]()
+Mockuip website made in Figma: [Figma Mockup](https://www.figma.com/design/uyyZyq4L7HNlB5XaXLrKaJ/Game-Website?node-id=0-1&t=lq4fztLpnksmroYu-1)
 
 # Getting Started with Create React App
 
