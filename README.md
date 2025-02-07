@@ -4,7 +4,7 @@ A Fictional responsive game website used to practice the basics of React JS by u
  - JavaScript Library: React JS.
  - CSS framework: Tailwind CSS
 
-Mockuip website made in Figma: [Figma Mockup](https://www.figma.com/design/uyyZyq4L7HNlB5XaXLrKaJ/Game-Website?node-id=0-1&t=lq4fztLpnksmroYu-1)
+Mockup website made in Figma: [Figma Mockup](https://www.figma.com/design/uyyZyq4L7HNlB5XaXLrKaJ/Game-Website?node-id=0-1&t=lq4fztLpnksmroYu-1)
 
 # Getting Started with Create React App
 
