@@ -32,7 +32,7 @@ export default forwardRef (function WeaponsInfo(props,ref) {
         weaponsInfoOpen===2 ? "bg-axe-background bg-left max-lg:bg-none bg-[length:300px_340px] " :  
         "bg-mace-background bg-left max-lg:bg-none bg-[length:300px_340px] "
       )}>
-        <div className=" w-full h-full flex flex-wrap flex-col lg:flex-row justify-center items-center gap-[5rem] z-20 relative py-10 px-20">
+        <div className=" w-full h-full flex flex-wrap flex-col lg:flex-row justify-center items-center gap-[5rem] z-20 relative py-10 px-10 sm:px-20">
           <div className=" h-[440px] w-[290px] border-white border-2  rounded-xl bg-[#315A83]  pt-2" onClick={() => {handleCards(1);checkClick()}}>
               <div className="flex justify-around items-center flex-col h-full py-4">
               <h2 className="text-2xl "> Sword of Kol </h2>
